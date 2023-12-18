@@ -1,7 +1,0 @@
-#!/bin/bash
-if [ -z "$CFILE" ]; then
-    echo "Error: CFILE variable is not set. Please export the C file name using 'export CFILE=<filename>'."
-    exit 1
-fi
-cpp -P "$CFILE" > c
-echo "Preprocessing completed. Result saved in 'c'."
